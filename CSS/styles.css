@@ -72,3 +72,25 @@ header h1 {
     text-decoration: none;
     font-size: 20px;
 }
+
+
+
+/* Cadastro */
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 550px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.cadastro h1{
+    font-size: 50px;
+}
+
+.cadastro p{
+    font-size: 20px;
+    margin-top: 10px;
+}
