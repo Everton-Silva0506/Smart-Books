@@ -151,13 +151,69 @@ header h1 {
 }
 
 .loginBox form button:hover {
-    background-color: #8f6c3a;
+    background-color: #8b652e;
 }
 
 .loginBox h2 {
     margin: 2px;
 }
 
+
+/* Footer Section */
+
+/* footer p{
+    padding: 10px;
+} */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer-section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.contact{
+    margin-left: 20%;
+}
+
+.about{
+    margin-left: 20%;
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .cadastro {
         flex-direction: column;
@@ -177,4 +233,11 @@ header h1 {
     .logo{
         align-self: center;
     }
+}
+
+@media (max-width: 900px) {
+    .about {
+        display: none;
+    }
+    
 }
