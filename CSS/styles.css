@@ -83,6 +83,8 @@ header h1 {
     flex: 1;
 }
 
+
+
 /* Cadastro Section */
 .cadastro {
     display: flex;
@@ -152,4 +154,25 @@ header h1 {
 
 .loginBox h2 {
     margin: 2px;
+}
+
+@media (max-width: 768px) {
+    .cadastro {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .textoboasvindas {
+        display: none;
+    }
+    .loginBox {
+        width: 100%;
+    }
+    .menu ul {
+        display: none;
+    }
+    .logo{
+        align-self: center;
+    }
 }
