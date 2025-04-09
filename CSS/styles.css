@@ -19,6 +19,8 @@ header {
     margin: 0;
     padding: 0;
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
@@ -31,8 +33,8 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
+    padding: 20px;
 }
 
 /* Logo Section */
@@ -73,24 +75,81 @@ header h1 {
     font-size: 20px;
 }
 
-
-
-/* Cadastro */
-.cadastro {
+/* Main Content */
+.blocoGrande {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    width: 550px;
-    margin-left: 70px;
-    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
 }
 
-.cadastro h1{
+/* Cadastro Section */
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cadastro h1 {
     font-size: 50px;
 }
 
-.cadastro p{
+.cadastro p {
     font-size: 20px;
     margin-top: 10px;
+}
+
+.textoboasvindas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+/* Login Box */
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    align-self: flex-start;
+}
+
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.loginBox form input,
+.loginBox form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.loginBox form input {
+    background-color: #f2f2f2;
+}
+
+.loginBox form button {
+    background-color: #af904c;
+    color: white;
+    font-size: 16px;
+}
+
+.loginBox form button:hover {
+    background-color: #8f6c3a;
+}
+
+.loginBox h2 {
+    margin: 2px;
 }
