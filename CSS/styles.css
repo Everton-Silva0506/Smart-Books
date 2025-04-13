@@ -273,7 +273,7 @@ header h1 {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .header{
+    header{
         height: 50vh;
     }
     .blocoGrande{
