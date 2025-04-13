@@ -1,6 +1,7 @@
 /* General Styles */
 body {
     font-family: sans-serif;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -215,6 +216,10 @@ header h1 {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    
+    .blocoGrande{
+        width: 100%;
+    }
     .cadastro {
         flex-direction: column;
         align-items: center;
@@ -233,11 +238,26 @@ header h1 {
     .logo{
         align-self: center;
     }
+    .contact {
+        margin-left: 0;
+    }
+    .footer-content {
+        padding: 0;
+    }
 }
 
 @media (max-width: 900px) {
     .about {
         display: none;
+    }
+    
+}
+
+@media (max-width: 405px) {
+    .footer-content {
+        /* flex-direction: column; */
+        align-items: center;
+        flex-direction: column-reverse;
     }
     
 }
